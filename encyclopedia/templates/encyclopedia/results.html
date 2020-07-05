@@ -5,5 +5,8 @@
 {% endblock %}
 
 {% block body %}
+<h1>Search Results</h1>
+<em>{{ msg }}</em>
+    <li><a href="{% url 'entry' text %}">{{ text }}</a></li>
 
 {% endblock %}

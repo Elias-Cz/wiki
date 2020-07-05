@@ -6,7 +6,7 @@
 
 {% block body %}
     <h1>All Pages</h1>
-
+    <em>{{ msg }}</em>
     <ul>
         {% for entry in entries %}
             <li><a href="{% url 'entry' entry %}">{{ entry }}</a></li>

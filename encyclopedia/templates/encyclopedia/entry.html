@@ -6,4 +6,11 @@
 
 {% block body %}
   {{ name |safe }}
+
+  <form class="" action="" method="post">
+    <input type="submit" name="" value="Edit">
+    <input type="hidden" name="edit" value="edit">
+    {% csrf_token %}
+  </form>
+
 {% endblock %}

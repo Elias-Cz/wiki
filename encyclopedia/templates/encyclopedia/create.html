@@ -1,0 +1,20 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+  Create Entry
+{% endblock %}
+
+{% block body %}
+
+<h1>Create a new page below.</h1> <br>
+After publishing your page, you will be redirected. <br>
+<em style="color:red;">{{ msg |safe }}</em>
+
+  <form class="" action="" method="post">
+    <input type="text" name="title" value=""> <br>
+    <textarea name="content" rows="2" cols="2" required"></textarea> <br>
+    <input type="submit" name="" value="submit">
+    {% csrf_token %}
+  </form>
+
+{% endblock %}
